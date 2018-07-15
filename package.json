@@ -1,0 +1,29 @@
+{
+  "name": "spotify-slack-status",
+  "version": "0.0.1",
+  "description": "Update your slack status with your currently playing Spotify track",
+  "main": "server.js",
+  "repository":"https://glitch.com/edit/#!/harmonious-shoemaker",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "spotify-web-api-node": "^3.1.1",
+    "node-fetch": "^1.6.3",
+    "@slack/client": "^4.3.1",
+    "nunjucks":"^3.1.3",
+    "express-nunjucks": "^2.2.3"
+  },
+  "engines": {
+    "node": "6.10.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "spotify",
+    "express",
+    "slack"
+  ]
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Slack Song Status Updater</title>
+  <meta name="description" content="Slack Song Status Updater">
+  <meta name="author" content="@pamo">
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body class="avenir">
+  <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+    <h1>
+      Let's get you authenticated.
+    </h1>
+    <h2>Spotify</h2>
+    <p>{{ spotifyMessage | safe }}</p>
+    <h2>Slack</h2>
+    <p>{{ slackMessage }}</p>
+    {% if showLink %}
+    <a href="/update" class="f4 fw6 db black link hover-blue">Set status message</a>
+    {% endif %}
+    <a href="https://glitch.com/edit/#!/harmonious-shoemaker?path=README.md" target="_blank" class="f6 fw6 db black link hover-blue">Wait, what is this?</a>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Error</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <body class="avenir">
+    <article class="vh-100 dt w-100">
+      <div class="dtc v-mid tc ph3 ph4-l">
+        <h1>An error occurred 😨</h1>
+        {% if error %}
+          <p>{{ error | safe }}</p>
+        {% endif %}
+      </div>
+    </article>
+  </body>
+</html>

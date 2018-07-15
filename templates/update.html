@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <body class="avenir">
+    <article class="vh-100 dt w-100">
+      <div class="dtc v-mid tc ph3 ph4-l">
+        {% if success and track %} 
+          <a class="db center mw5 tc black link dim"
+             title="{{ artist }} {{ track }}"
+             href="{{spotifyLink}}">
+            <img src="{{ albumCover.url }}"
+                 class="db ba b--black-10 center"
+                 alt="{{ artist }} {{ album }}"/>
+            <dl class="mt2 f6 lh-copy">
+              <dt class="clip">Track</dt>
+              <dd class="ml0">{{track}}</dd>
+              <dt class="clip">Artist</dt>
+              <dd class="ml0 gray">{{artist}}</dd>
+            </dl>
+          </a>
+        {% else %}
+          <h2>
+            Go play some music! 💆🏻‍♀️🎧
+          </h2>
+        {% endif %}
+      </div>
+    </article>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Update your slack status with your currently playing Spotify track",
   "main": "server.js",
-  "repository": "https://glitch.com/edit/#!/harmonious-shoemaker",
+  "repository": "https://github.com/pamo/spotify-slack-status",
   "scripts": {
     "start": "node server.js"
   },
